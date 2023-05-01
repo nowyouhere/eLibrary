@@ -22,6 +22,11 @@ body {
   justify-content: space-between;
 }
 
+.link {
+  color: #1E3045;
+  border-bottom: none;
+}
+
 .dark-mode-title {
   padding-right: 10px;
 }
