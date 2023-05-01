@@ -63,10 +63,12 @@ function changeMode() {
     const body = document.body;
     const main = document.querySelector('.main');
     const buttons = document.querySelectorAll('.btn');
+    const link = document.querySelector('.link');
     if (isOn) {
         chandeModeBtn.classList.remove('change-mode-btn_dark');
         body.classList.remove('body-dark-mode');
         main.classList.remove('main-dark-mode');
+        link.classList.remove('link-dark-mode');
         buttons.forEach(btn => {
             btn.classList.remove('btn-dark-mode');
         });
@@ -78,6 +80,7 @@ function changeMode() {
         chandeModeBtn.classList.add('change-mode-btn_dark');
         body.classList.add('body-dark-mode');
         main.classList.add('main-dark-mode');
+        link.classList.add('link-dark-mode');
         buttons.forEach(btn => {
             btn.classList.add('btn-dark-mode');
         });
