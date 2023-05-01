@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Bookhub</title>
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&family=Montserrat&family=Open+Sans:wght@700&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="css/main.css">
+</head>
+<body>
+	<header class="header" id="header">
+		<div class="container">
+			<span class="logo"> BookHub  </span>
+			<h1 class="header-title"> Библиотека у тебя в кармане </h1>
+			<span class="sub-title"> Read between the lines </span>
+			<a href="#main" class="header-link"> Читать ↓ </a>
+		</div>
+	</header>
+	<main class="main" id="main">
+		<div class="genres slider">
+			<button class="tablinks" onclick="openService(event, 'fantasic')" id="defaultOpen">Фантастика</button>
+			<button class="tablinks" onclick="openService(event, 'novel')">Роман</button>
+			<button class="tablinks" onclick="openService(event, 'detective')">Детектив</button>
+			<button class="tablinks" onclick="openService(event, 'poetry')">Поэзия</button>
+			<button class="tablinks" onclick="openService(event, 'memoirs')">Мемуары</button>
+			<button class="tablinks" onclick="openService(event, 'adventure')">Приключение</button>
+			<button class="tablinks" onclick="openService(event, 'fantasy')">Фэнтези</button>
+			<button class="tablinks" onclick="openService(event, 'dystopia')">Антиутопия</button>
+			<button class="tablinks" onclick="openService(event, 'Thriller')">Триллер</button>
+			<button class="tablinks" onclick="openService(event, 'horror')">Ужасы</button>
+			<button class="tablinks" onclick="openService(event, 'mystic')">Мистика</button>
+		</div>
+		<div class="container main-wrapper">
+			<ul class="books-list tabcontent" id="fantasic">
+				<li class="books-list-item">
+					<img src="img/1984.png" alt="1984" class="book-image">
+					<div class="book-intro">
+						<p class="book-title">
+							<b>1984 -</b> роман Джорджа Оруэлла, опубликованный в 1949 году, является классикой научной фантастики и политической литературы.
+						</p>
+						<span class="book-span">
+							<b>Автор -</b> Джордж Оруэлл
+						</span>
+						<span class="book-span">
+							<b>Дата первой публикации :</b> 08.06.1949
+						</span>
+						<a href="books/1984.html" class="book-link">Прочесть</a>
+					</div>
+				</li>
+				<li class="book-list-item">
+					<img src="img/narnia.png" alt="Narnia" class="book-image">
+					<div class="book-intro">
+						<p class="book-title">
+							<b>Хроники Нарнии -</b> серия из семи книг для детей и взрослых, написанных Клайвом Стейплзом Льюисом в 1950-х годах.
+						</p>
+						<span class="book-span">
+							<b>Автор -</b> Клайв Стейплз Льюис
+						</span>
+						<span class="book-span">
+							<b>Дата первой публикации :</b> 1950 год
+						</span>
+						<a href="books/narnia.html" class="book-link">Прочесть</a>
+					</div>
+				</li>
+			</ul>
+			<ul class="books-list tabcontent" id="novel">
+				<li class="booklist-item">
+					<img src="img/1984.png" alt="1984" class="book-image">
+					<div class="book-intro">
+						<p class="book-title">
+							<b>1984 -</b> роман Джорджа Оруэлла, опубликованный в 1949 году, является классикой научной фантастики и политической литературы.
+						</p>
+						<span class="book-span">
+							<b>Автор -</b> Джордж Оруэлл
+						</span>
+						<span class="book-span">
+							<b>Дата первой публикации :</b> 08.06.1949
+						</span>
+						<a href="books/1984.html" class="book-link">Прочесть</a>
+					</div>
+				</li>
+				<li class="book-list-item">
+					<img src="img/narnia.png" alt="Narnia" class="book-image">
+					<div class="book-intro">
+						<p class="book-title">
+							<b>Хроники Нарнии -</b> серия из семи книг для детей и взрослых, написанных Клайвом Стейплзом Льюисом в 1950-х годах.
+						</p>
+						<span class="book-span">
+							<b>Автор -</b> Клайв Стейплз Льюис
+						</span>
+						<span class="book-span">
+							<b>Дата первой публикации :</b> 1950 год
+						</span>
+						<a href="books/narnia.html" class="book-link">Прочесть</a>
+					</div>
+				</li>
+			</ul>
+		</div>
+	</main>
+	<footer class="footer" id="footer">
+		<div class="container">
+			<span class="copyright">
+				Дипломный проект
+			</span>
+		</div>
+	</footer>
+	<script src="js/main.js"></script>
+</body>
+</html>

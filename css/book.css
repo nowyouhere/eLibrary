@@ -1,0 +1,108 @@
+body {
+  color: #1E3045;
+}
+
+.body-dark-mode {
+  background-color: #1E3045;
+  color: #E3F4FF;
+}
+
+.logo {
+	text-align: left;
+}
+
+.header {
+  background: transparent;
+  padding-bottom: 40px;
+}
+
+.header-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.dark-mode-title {
+  padding-right: 10px;
+}
+
+.change-mode-btn {
+  background: #1E3045;
+  color: #E3F4FF;
+}
+
+.change-mode-btn_dark {
+  background: #E3F4FF;
+  color: #1E3045;
+}
+
+.main {
+  margin-top: 0;
+  padding-bottom: 25px;
+}
+
+.main-dark-mode {
+  background-color: #1E3045;
+}
+
+.book-title {
+  font-size: 22px;
+  padding-bottom: 30px;
+}
+
+.book-span {
+  padding-bottom: 20px;
+}
+
+.page {
+  background-color: #E3F4FF;
+  border-radius: 20px;
+  padding: 20px;
+  text-align: justify;
+  display: none;
+}
+
+.page-dark-mode {
+  background-color: #1E1E1E;
+  color: #E3F4FF;
+}
+
+.main-bottom {
+  padding-top: 30px;
+  display: flex;
+  position: relative;
+}
+
+.main-bottom-wrapper {
+  margin: auto;
+  display: flex;
+  align-items: center;
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.btn {
+  border: none;
+  background: transparent;
+  cursor: pointer;
+  color: #1E3045;
+}
+
+.btn-dark-mode {
+  color: #E3F4FF;
+}
+
+.pages-number {
+  padding: 0 5px;
+}
+
+.footer {
+  padding: 40px 0;
+  color: #E3F4FF;
+  margin-top: 0;
+}
+
+.active-page {
+  display: block;
+}
