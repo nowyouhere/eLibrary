@@ -22,9 +22,6 @@ function prevPage() {
     pages[currentPage].classList.add('active-page');
     currentPageNumber.innerHTML = currentPage + 1;
     pages[currentPage].scrollIntoView({ behavior: 'smooth' });
-    if (!isOn) {
-        pages[currentPage].classList.add('page-dark-mode');
-    }
 }
 
 function nextPage() {
