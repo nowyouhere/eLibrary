@@ -87,12 +87,13 @@ a {
 
 .main-wrapper {
 	position: relative;
+	padding-top: 30px;
 }
 
 .genres {
-	padding-bottom: 40px;
+	padding-bottom: 20px;
 	display: flex;
-	overflow: hidden;
+	overflow-x: auto;
 	padding-left: 30px;
 }
 
