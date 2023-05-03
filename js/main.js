@@ -1,4 +1,4 @@
-function openService(evt, serviceName) {
+function openBook(evt, serviceName) {
   // Declare all variables
   let i, tabcontent, tablinks;
 
