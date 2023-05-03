@@ -11,9 +11,6 @@ nextBtn.addEventListener('click', nextPage);
 chandeModeBtn.addEventListener('click', changeMode);
 
 let currentPage = 0;
-let touchStartX = null;
-let touchEndX = null;
-let minSwipeDistance = 150;
 let isOn = false;
 
 function prevPage() {
@@ -33,31 +30,6 @@ function nextPage() {
 }
 
 pagesCount.innerHTML = pages.length;
-
-function handleTouchStart(event) {
-    touchStartX = event.changedTouches[0].clientX;
-}
-
-function handleTouchMove(event) {
-    event.preventDefault();
-    touchEndX = event.changedTouches[0].clientX;
-}
-
-function handleTouchEnd() {
-    if (touchEndX < touchStartX - minSwipeDistance) {
-      nextPage();
-    } else if (touchEndX > touchStartX + minSwipeDistance) {
-      prevPage();
-    }
-    touchStartX = null;
-    touchEndX = null;
-}
-
-
-const book = document.querySelector('.book');
-book.addEventListener('touchstart', handleTouchStart);
-book.addEventListener('touchmove', handleTouchMove);
-book.addEventListener('touchend', handleTouchEnd);
 
 function changeMode() {
     const body = document.body;
