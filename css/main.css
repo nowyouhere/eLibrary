@@ -4,6 +4,10 @@
 	padding: 0;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 body {
 	font-family: 'Lato', sans-serif;
 	color: #E3F4FF;
